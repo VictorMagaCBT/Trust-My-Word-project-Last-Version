@@ -5,9 +5,8 @@
 [build.environment]
   PIPENV_VENV_IN_PROJECT = "true"
 
-[build]
-  lifecycle:
-    onbuild:
-      - 'pyenv install 3.10'
-      - 'pyenv global 3.10'
-      - 'pip install pipenv'
+[[plugins]]
+  package = "@netlify/plugin-functions-install-python"
+
+[plugins.inputs]
+  runtime = "3.10"
