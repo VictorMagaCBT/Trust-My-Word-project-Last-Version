@@ -1,0 +1,13 @@
+[build]
+  command = "pipenv install"
+  publish = "public"
+
+[build.environment]
+  PIPENV_VENV_IN_PROJECT = "true"
+
+[build]
+  lifecycle:
+    onbuild:
+      - 'pyenv install 3.8.10'
+      - 'pyenv global 3.8.10'
+      - 'pip install pipenv'
