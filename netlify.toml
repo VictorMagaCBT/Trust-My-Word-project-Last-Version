@@ -8,6 +8,6 @@
 [build]
   lifecycle:
     onbuild:
-      - 'pyenv install 3.8.10'
-      - 'pyenv global 3.8.10'
+      - 'pyenv install 3.10'
+      - 'pyenv global 3.10'
       - 'pip install pipenv'
