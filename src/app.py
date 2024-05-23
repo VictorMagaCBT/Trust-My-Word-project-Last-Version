@@ -36,8 +36,8 @@ app.config["JWT_SECRET_KEY"] = os.getenv("JWT_SECRET")
 app.config["JWT_ACCESS_TOKEN_EXPIRES"] = timedelta(hours=1) 
 jwt = JWTManager(app)
 # Allow CORS requests to this API
-CORS(app)
 
+CORS(app, resources={r"/*": {"origins": "https://trust-my-word-project-last-version2.onrender.com"}})
 
 # add the admin
 setup_admin(app)
