@@ -38,7 +38,7 @@ jwt = JWTManager(app)
 
 # Allow CORS requests to this API
 
-CORS(app, resources={r"/*": {"origins":"https://solid-space-bassoon-66jpxqv6p6rcr795-3001.app.github.dev" }})
+CORS(app, resources={r"/*": {"origins":"https://trust-my-word-project-last-version2.onrender.com" }})
 
 # add the admin
 setup_admin(app)
