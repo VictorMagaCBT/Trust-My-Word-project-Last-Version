@@ -38,7 +38,7 @@ jwt = JWTManager(app)
 
 # Allow CORS requests to this API
 
-CORS(app, resources={r"/*": {"origins":"https://solid-space-bassoon-66jpxqv6p6rcr795-3001.app.github.dev" }})
+CORS(app, resources={r"/*": {"origins": "https://trust-my-word-project-last-version2.onrender.com"}})
 
 # add the admin
 setup_admin(app)
@@ -70,7 +70,6 @@ def serve_any_other_file(path):
     response.cache_control.max_age = 0 # avoid cache memory
     return response
 
-CORS(app)
 # this only runs if `$ python src/main.py` is executed
 if __name__ == '__main__':
     PORT = int(os.environ.get('PORT', 3001))

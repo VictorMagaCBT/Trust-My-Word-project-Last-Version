@@ -12,7 +12,7 @@ const EmailVerification = () => {
     const verifyEmail = async () => {
         console.log('I am here');
       try {
-        const response = await fetch(`${process.env.BACKEND_URL}api/verify/${token}`, {
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}api/verify/${token}`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
