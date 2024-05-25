@@ -39,7 +39,7 @@ export const Home = () => {
 
 
 	const fetchFilteredReviews = () => {
-		fetch(process.env.BACKEND_URL + '/api/getFilteredReviews' ,{
+		fetch(process.env.BACKEND_URL + 'api/getFilteredReviews' ,{
 			method: 'POST',
       		headers: {
 				"Content-Type": "application/json"
